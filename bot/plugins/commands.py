@@ -90,7 +90,7 @@ async def start(bot, update):
 
     buttons = [[
         InlineKeyboardButton('MasTer👑', url='https://t.me/mrvasuz'),
-        InlineKeyboardButton('BingeWatch🎫', url ='https://github.com/AlbertEinsteinTG/Adv-Auto-Filter-Bot-V2')
+        InlineKeyboardButton('Binge Watch🎥', url ='https://t.me/ExploreMoviez')
     ],[
         InlineKeyboardButton('Questions?😏', url='https://www.google.com')
     ],[
