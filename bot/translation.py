@@ -10,7 +10,7 @@ class Translation(object):
 Just Add Me To Your Group And Channel And Connect Them And See My Pevers 🔥🔥😝
 
 Don't Waste Your Time Here IAM Already Reserved To....
-@ExploreMoviez
+@Parellelframes
 </i>"""    
     
     HELP_TEXT = """
