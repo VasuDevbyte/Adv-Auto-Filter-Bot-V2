@@ -38,7 +38,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'MasTer👑', url="https://t.me/CrazyBotsz"
+                                    'MasTer👑', url="https://t.me/parallelframes"
                                 )
                         ]
                     ]
@@ -90,7 +90,7 @@ async def start(bot, update):
 
     buttons = [[
         InlineKeyboardButton('MasTer👑', url='https://t.me/mrvasuz'),
-        InlineKeyboardButton('Binge Watch🎥', url ='https://t.me/ExploreMoviez')
+        InlineKeyboardButton('Binge Watch🎥', url ='https://t.me/parallelframes')
     ],[
         InlineKeyboardButton('Questions?😏', url='https://www.google.com')
     ],[
