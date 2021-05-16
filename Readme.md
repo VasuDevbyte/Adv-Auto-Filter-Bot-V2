@@ -17,7 +17,7 @@ __This Is Just An Simple Advance Auto Filter Bot Complete Rewritten Version Of [
 __Just Sent Any Text As Query It Will Search For All Connected Chat's Files In Its MongoDB And Reply You With The Message Link As A Button__
 
 
-![logo](https://telegra.ph/file/bd72857322159140bec6b.jpg)
+![logo](https://telegra.ph/file/430ce12c38baca9f5d47a.jpg)
 
 ## Usage
 
