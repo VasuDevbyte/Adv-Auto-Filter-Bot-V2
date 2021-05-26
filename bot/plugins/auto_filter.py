@@ -126,7 +126,14 @@ async def auto_filter(bot, update):
             )
         
     else:
-        return # return if no files found for that query
+        else:
+            await bot.send_message(
+                chat_id = update.chat.id,
+                text=f"Damn Bruh! Unfortunately We Couldn't Find This Movie Make Sure Your Spelling?😅",
+                reply_markup=reply_markup,
+                parse_mode="html",
+                reply_to_message_id=update.message_id
+            )
     
 
     if len(results) == 0: # double check
