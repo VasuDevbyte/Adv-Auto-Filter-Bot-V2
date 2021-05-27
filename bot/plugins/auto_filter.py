@@ -127,11 +127,22 @@ async def auto_filter(bot, update):
         
     else:
       
-         await bot.send_message(
-                chat_id = update.chat.id,
-                text=f"Damn Bruh! Unfortunately We Couldn't Find This Movie Make Sure Your Spelling?😅",              
-                parse_mode="html",
-                reply_to_message_id=update.message_id
+         Snd_msg = await bot.send_message(
+chat_id =update.chat.id,
+text=f"Damn Bruh! Unfortunately We Couldn't Find This Movie Make Sure Your Spelling?😅",             parse_mode="html",
+reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton
+                                (
+                                    'Must Read😑', url="https://t.me/Exploremoviez/239604"
+                                )
+                        ]
+                    ]
+                ), reply_to_message_id=update.message_id
+)
+await asyncio.sleep(5) # in seconds
+await Snd_msg.delete()
             )
     
 
