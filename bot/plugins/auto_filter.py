@@ -142,7 +142,7 @@ reply_markup=InlineKeyboardMarkup(
                 ), reply_to_message_id=update.message_id
 )
 await asyncio.sleep(5) # in seconds
-await Snd_msg.delete()
+await Snd_msg.delete()    )
             
     
 
