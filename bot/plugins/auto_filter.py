@@ -128,7 +128,7 @@ async def auto_filter(bot, update):
     else:
         send_msg = await bot.send_message(
         chat_id = update.chat.id,
-        text=f"Damn Bruh! Unfortunately We Couldn't Find This Movie Make Sure Your Spelling?😅",
+        text=f"Damn {update.from_user.mention}! Unfortunately We Couldn't Find This Movie Make Sure Your Spelling?😅",
         reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -221,7 +221,9 @@ async def auto_filter(bot, update):
         try:
             await bot.send_message(
                 chat_id = update.chat.id,
-                text=f" Hey There!😍 Hope You Got Better Results, We Found {(len_results)} Results For Your Query👉: <code>{query}</code> For Series Join @Series_Terminal ",
+                text=f" Hey There!😍 Hope You Got Better Results,
+ We Found {(len_results)} Results For Your Query👉: <code>{query}</code> 
+For Series Join @Series_Terminal ",
                 reply_markup=reply_markup,
                 parse_mode="html",
                 reply_to_message_id=update.message_id
