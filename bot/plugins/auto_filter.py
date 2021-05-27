@@ -126,7 +126,7 @@ async def auto_filter(bot, update):
             )
         
     else:
-        else:
+        
             await bot.send_message(
                 chat_id = update.chat.id,
                 text=f"Damn Bruh! Unfortunately We Couldn't Find This Movie Make Sure Your Spelling?😅",
