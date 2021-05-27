@@ -129,8 +129,7 @@ async def auto_filter(bot, update):
       
          await bot.send_message(
                 chat_id = update.chat.id,
-                text=f"Damn Bruh! Unfortunately We Couldn't Find This Movie Make Sure Your Spelling?😅",
-                reply_markup=reply_markup,
+                text=f"Damn Bruh! Unfortunately We Couldn't Find This Movie Make Sure Your Spelling?😅",              
                 parse_mode="html",
                 reply_to_message_id=update.message_id
             )
