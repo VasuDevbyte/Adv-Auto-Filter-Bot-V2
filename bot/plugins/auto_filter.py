@@ -221,10 +221,7 @@ async def auto_filter(bot, update):
         try:
             await bot.send_message(
                 chat_id = update.chat.id,
-                text=f"Hey There, We Found This📡...
-● Requested By ;- {update.from_user.mention} 😎
-● Searched For :- <code>{query}</code> 🔎
-● Total Results ;- {(len_results)} 💯
+                text=f"Hey There, We Found This📡...● Requested By ;- {update.from_user.mention} 😎● Searched For :- <code>{query}</code> 🔎● Total Results ;- {(len_results)} 💯
 
 Powered By :- @Explore_Cinema ⚜",
                 reply_markup=reply_markup,
