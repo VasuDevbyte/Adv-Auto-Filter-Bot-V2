@@ -126,10 +126,10 @@ async def auto_filter(bot, update):
             )
         
     else:
-        send_msg = await app.send_sticker("me", "CAACAgUAAxkBAAO7YL4nW3Qg9sFv2U1oImRnzwPcAAEyAALlAgACkOjwVRfIncIxP97tHwQ")
-        chat_id = update.chat.id,
+            send_msg = await app.send_sticker("me", "CAACAgUAAxkBAAO7YL4nW3Qg9sFv2U1oImRnzwPcAAEyAALlAgACkOjwVRfIncIxP97tHwQ")
+            chat_id = update.chat.id,
         
-        reply_markup=InlineKeyboardMarkup(
+            reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton
@@ -139,11 +139,11 @@ async def auto_filter(bot, update):
                         ]
                     ]
                 ),
-        parse_mode="html",
-        reply_to_message_id=update.message_id
-     ) 
-        await asyncio.sleep(5)
-        await send_msg.delete()
+            parse_mode="html",
+            reply_to_message_id=update.message_id
+         ) 
+            await asyncio.sleep(5)
+            await send_msg.delete()
             
     
 
