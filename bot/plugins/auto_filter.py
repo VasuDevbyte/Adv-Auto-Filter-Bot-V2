@@ -305,6 +305,7 @@ async def recacher(group_id, ReCacheInvite=True, ReCacheActive=False, bot=Bot, u
 
 @Client.on_callback_query()
 async def cb_handlerss(client: Client , query: CallbackQuery):
+    data = query.data
     if data == "lol":
         await query.answer(
             "Check Your Spelling By Ensuring It In *Google* 😑.",
