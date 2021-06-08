@@ -134,7 +134,7 @@ async def auto_filter(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Must Read😑', url="https://t.me/Exploremoviez/239604"
+                                    'Must Read😑', callback_data = "lol""
                                 )
                         ]
                     ]
@@ -303,3 +303,10 @@ async def recacher(group_id, ReCacheInvite=True, ReCacheActive=False, bot=Bot, u
             ACTIVE_CHATS[str(group_id)] = achatId
     return 
 
+@Client.on_callback_query()
+async def cb_handlerss(client: Client , query: CallbackQuery):
+    if data == "lol":
+        await query.answer(
+            "Check Your Spelling By Ensuring It In *Google* 😑.",
+            show_alert=True
+     )
