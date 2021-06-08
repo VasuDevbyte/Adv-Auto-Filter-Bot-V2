@@ -134,7 +134,7 @@ async def auto_filter(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Must Read😑', callback_data = "lol""
+                                    'Must Read😑', callback_data = "lol"
                                 )
                         ]
                     ]
