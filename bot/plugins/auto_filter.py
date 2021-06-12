@@ -136,7 +136,7 @@ group_id = update.chat.id
                         [
                             InlineKeyboardButton
                                 (
-                                    'Must Read😑', callback_data = "lol"
+                                    'Must Read😑', url="http://google.com/search?q={G_SEARCH}"
                                 )
                         ]
                     ]
