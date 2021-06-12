@@ -20,7 +20,9 @@ async def auto_filter(bot, update):
     """
     A Funtion To Handle Incoming Text And Reply With Appropriate Results
     """
-    group_id = update.chat.id
+    KEY_WORD = update.text
+G_SEARCH = re.sub(r' ', '+', f'{KEY_WORD}')
+group_id = update.chat.id
 
     if re.findall(r"((^\/|^,|^\.|^[\U0001F600-\U000E007F]).*)", update.text):
         return
@@ -128,7 +130,7 @@ async def auto_filter(bot, update):
     else:
         send_msg = await bot.send_sticker(
         chat_id = update.chat.id,
-        sticker="CAACAgUAAxkBAAO7YL4nW3Qg9sFv2U1oImRnzwPcAAEyAALlAgACkOjwVRfIncIxP97tHwQ",
+        sticker="CAACAgUAAxkBAAPSYMQqxplAG-cZK-jgSCVSTFiyp78AAkQDAAJqFCBWN9IqXbSnyXQfBA",
         reply_markup=InlineKeyboardMarkup(
                     [
                         [
