@@ -136,7 +136,7 @@ async def auto_filter(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Must Read😑', url="http://google.com/search?q={G_SEARCH}"
+                                    'Check Spelling 🔎', url=f"http://google.com/search?q={G_SEARCH}"
                                 )
                         ]
                     ]
