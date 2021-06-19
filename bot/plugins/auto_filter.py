@@ -222,7 +222,7 @@ async def auto_filter(bot, update):
         try:
             await bot.send_message(
                 chat_id = update.chat.id,
-                text=f"𝐇𝐞𝐲 𝐓𝐡𝐞𝐫𝐞, 𝐖𝐞 𝐅𝐨𝐮𝐧𝐝 𝐓𝐡𝐢𝐬📡...\n\n𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲;- {update.from_user.mention} 😎\n\n● 𝐒𝐞𝐚𝐫𝐜𝐡𝐞𝐝 𝐅𝐨𝐫 :- <b>{query}</b> 🔎\n\n● 𝐓𝐨𝐭𝐚𝐥 𝐑𝐞𝐬𝐮𝐥𝐭𝐬 ;- {(len_results)} 💯\n\n🌴 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 :- @Explore_Cinema ⚜",
+                text=f"𝐇𝐞𝐲 𝐓𝐡𝐞𝐫𝐞, 𝐖𝐞 𝐅𝐨𝐮𝐧𝐝 𝐓𝐡𝐢𝐬📡...\n\n𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲;- {update.from_user.mention} 😎\n\n● 𝐒𝐞𝐚𝐫𝐜𝐡𝐞𝐝 𝐅𝐨𝐫 :- <code>{query}<code> 🔎\n\n● 𝐓𝐨𝐭𝐚𝐥 𝐑𝐞𝐬𝐮𝐥𝐭𝐬 ;- {(len_results)} 💯\n\n🌴 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 :- @Explore_Cinema ⚜",
                 reply_markup=reply_markup,
                 parse_mode="html",
                 reply_to_message_id=update.message_id
