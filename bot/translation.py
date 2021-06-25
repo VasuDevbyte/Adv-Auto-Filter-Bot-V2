@@ -5,12 +5,12 @@
 class Translation(object):
     
     START_TEXT = """<b>Hey {}!!</b>
-<i>Am Just A Advance Auto Filter Bot....😉
+<i>What Iz Up <b>Amigo!</b>🎉\nAm Just A Advance Auto Filter Bot....😉
 
 Just Add Me To Your Group And Channel And Connect Them And See My Pevers 🔥🔥😝
 
 Don't Waste Your Time Here IAM Already Reserved To....
-@Parellelframes
+@Explore_Cinema
 </i>"""    
     
     HELP_TEXT = """
