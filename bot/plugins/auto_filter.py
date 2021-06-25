@@ -131,25 +131,18 @@ async def auto_filter(bot, update):
         send_msg = await bot.send_sticker(
         chat_id = update.chat.id,
         sticker="CAACAgUAAxkBAAPSYMQqxplAG-cZK-jgSCVSTFiyp78AAkQDAAJqFCBWN9IqXbSnyXQfBA",
+        reply_to_message_id=update.message_id,
         reply_markup=InlineKeyboardMarkup(
-                    [
-                        [
-                            InlineKeyboardButton
-                                (
-                                    'Check Spelling.🚶', url=f"http://google.com/search?q={G_SEARCH}"
-                                )
-                           
-                    [
-                        [
-                            InlineKeyboardButton
-                                (
-                                    'Rules❌', callback_data = "lol"
-                                )
-                        ]
-                    ]
-                ),
-        reply_to_message_id=update.message_id
-     ) 
+            [
+                [
+                    InlineKeyboardButton('Check Spelling.🚶', url=f"http://google.com/search?q={G_SEARCH}")
+                ],
+                [
+                    InlineKeyboardButton('Rules❌', callback_data = "lol")
+                ]
+            ]
+        )
+    )
         await asyncio.sleep(7)
         await send_msg.delete()
             
