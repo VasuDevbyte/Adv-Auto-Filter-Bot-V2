@@ -23,7 +23,7 @@ async def start(bot, update):
         if (file_id or file_type) == None:
             return
         
-        caption = file_caption if file_caption != ("" or None) else (┈••✿@Explore_Cinema✿••\n\n➠ Series Channel : https://t.me/Series_Terminal_Channel\n\n➠Group : https://t.me/Series_Terminal\n\nWe aRe So Glad For Using Thiz Bot 🖤\n\n <b>Must InForm Your Frnds By Sharing</b> 🙏)
+        caption = "┈••✿@Explore_Cinema✿••\n\n➠ Series Channel : https://t.me/Series_Terminal_Channel\n\n➠Group : https://t.me/Series_Terminal\n\nWe aRe So Glad For Using Thiz Bot 🖤\n\n <b>Must InForm Your Frnds By Sharing</b>"
         
         if file_type == "document":
         
