@@ -138,7 +138,7 @@ async def auto_filter(bot, update):
                                 (
                                     'Check Spelling.🚶', url=f"http://google.com/search?q={G_SEARCH}"
                                 )
-                           (
+                           
                     [
                         [
                             InlineKeyboardButton
