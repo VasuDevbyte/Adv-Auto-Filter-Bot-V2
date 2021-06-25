@@ -310,6 +310,6 @@ async def cb_handlerss(client: Client , query: CallbackQuery):
     data = query.data
     if data == "lol":
         await query.answer(
-            "Must Follow...!"Bahubali Movie send" ❌🚶"Bahubali 2015" ✔️🍾For Dubbed Versions MentionAdmins! Happy Viewing...😉.",
+            "Must Follow...! Bahubali Movie send ❌🚶Bahubali 2015 ✔️🍾For Dubbed Versions MentionAdmins! Happy Viewing...😉.",
             show_alert=True
      )
