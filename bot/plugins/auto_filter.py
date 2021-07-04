@@ -2,6 +2,7 @@ import re
 import logging
 import asyncio
 
+from imdb import IMDb
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from pyrogram.errors import ButtonDataInvalid, FloodWait
@@ -313,3 +314,10 @@ async def cb_handlerss(client: Client , query: CallbackQuery):
             "Must Follow...!\n\nBahubali Movie send ❌🚶\nBahubali 2015 ✔️🍾\n\nFor Dubbed Versions MentionAdmins!\n\nHappy Viewing...😉.",
             show_alert=True
      )
+# creating  an instance of the IMDb class
+    ia = imdb.IMDb() 
+#creating a variable for Updated text..!
+        name = "G_SEARCH"
+#searching the Movie!
+            Sea_rch = ia.search_movie(name)
+    )
