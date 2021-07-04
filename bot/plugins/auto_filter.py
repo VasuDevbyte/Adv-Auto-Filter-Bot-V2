@@ -306,14 +306,6 @@ async def recacher(group_id, ReCacheInvite=True, ReCacheActive=False, bot=Bot, u
             ACTIVE_CHATS[str(group_id)] = achatId
     return 
 
-@Client.on_callback_query()
-async def cb_handlerss(client: Client , query: CallbackQuery):
-    data = query.data
-    if data == "lol":
-        await query.answer(
-            "Must Follow...!\n\nBahubali Movie send ❌🚶\nBahubali 2015 ✔️🍾\n\nFor Dubbed Versions MentionAdmins!\n\nHappy Viewing...😉.",
-            show_alert=True
-     )
 # creating  an instance of the IMDb class
     ia = imdb.IMDb() 
 #creating a variable for Updated text..!
