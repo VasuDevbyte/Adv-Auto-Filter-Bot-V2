@@ -23,6 +23,9 @@ async def auto_filter(bot, update):
     """
     KEY_WORD = update.text
     G_SEARCH = re.sub(r' ', '+', f'{KEY_WORD}')
+    ia = imdb.IMDb() 
+    name = "G_SEARCH"
+    Sea_rch = ia.search_movie(name)
     group_id = update.chat.id
 
     if re.findall(r"((^\/|^,|^\.|^[\U0001F600-\U000E007F]).*)", update.text):
@@ -305,12 +308,7 @@ async def recacher(group_id, ReCacheInvite=True, ReCacheActive=False, bot=Bot, u
             
             ACTIVE_CHATS[str(group_id)] = achatId
     return
-# creating  an instance of the IMDb class
-    ia = imdb.IMDb() 
-#creating a variable for Updated text..!
-    name = "G_SEARCH"
-#searching the Movie!
-    Sea_rch = ia.search_movie(name)
+
 @Client.on_callback_query()
 async def cb_handlerss(client: Client , query: CallbackQuery):
     data = query.data
