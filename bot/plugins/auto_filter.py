@@ -134,7 +134,7 @@ async def auto_filter(bot, update):
     else:
         send_msg = await bot.send_message(
         chat_id = update.chat.id,
-        text=f"Plox...🤒/nTry Thiz: <code>{Sea_rch}</code>",
+        text=f"Plox...🤒\nTry Thiz: <code>{Sea_rch}</code>",
         reply_to_message_id=update.message_id,
         reply_markup=InlineKeyboardMarkup(
             [
