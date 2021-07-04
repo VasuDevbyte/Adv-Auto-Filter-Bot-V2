@@ -23,7 +23,7 @@ async def auto_filter(bot, update):
     """
     KEY_WORD = update.text
     G_SEARCH = re.sub(r' ', '+', f'{KEY_WORD}')
-    ia = imdb.IMDb() 
+    ia = IMDb() 
     name = "G_SEARCH"
     Sea_rch = ia.search_movie(name)
     group_id = update.chat.id
