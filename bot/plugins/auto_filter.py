@@ -317,7 +317,7 @@ async def cb_handlerss(client: Client , query: CallbackQuery):
 # creating  an instance of the IMDb class
     ia = imdb.IMDb() 
 #creating a variable for Updated text..!
-        name = "G_SEARCH"
+     name = "G_SEARCH"
 #searching the Movie!
             Sea_rch = ia.search_movie(name)
     )
