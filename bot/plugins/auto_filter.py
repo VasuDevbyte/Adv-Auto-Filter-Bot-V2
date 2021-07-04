@@ -23,7 +23,7 @@ async def auto_filter(bot, update):
     """
     G_SEARCH = update.text
     ia = imdb.IMDb()
-    Sea_rch = ia.search_movie('G_SEARCH')
+    Sea_rch = ia.search_movie(f'{G_SEARCH}')
     group_id = update.chat.id
 
     if re.findall(r"((^\/|^,|^\.|^[\U0001F600-\U000E007F]).*)", update.text):
