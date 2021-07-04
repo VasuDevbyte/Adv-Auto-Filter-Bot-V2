@@ -131,7 +131,7 @@ async def auto_filter(bot, update):
     else:
         send_msg = await bot.send_sticker(
         chat_id = update.chat.id,
-        sticker="CAACAgUAAxkBAAPSYMQqxplAG-cZK-jgSCVSTFiyp78AAkQDAAJqFCBWN9IqXbSnyXQfBA",
+        text=f"Plox...🤒/nTry Thiz: <code>{Sea_rch}</code>",
         reply_to_message_id=update.message_id,
         reply_markup=InlineKeyboardMarkup(
             [
