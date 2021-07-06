@@ -22,8 +22,6 @@ async def auto_filter(bot, update):
     A Funtion To Handle Incoming Text And Reply With Appropriate Results
     """
     G_SEARCH = update.text
-    ia = imdb.IMDb()
-    Sea_rch = ia.search_movie(f'{G_SEARCH}')
     group_id = update.chat.id
 
     if re.findall(r"((^\/|^,|^\.|^[\U0001F600-\U000E007F]).*)", update.text):
@@ -132,7 +130,7 @@ async def auto_filter(bot, update):
     else:
         send_msg = await bot.send_message(
         chat_id = update.chat.id,
-        text=f"Plox...🤒\nTry Thiz: <code>{Sea_rch}</code>",
+        text=f"Plox...🤒\nTry Thiz: <code>Typo*</code>",
         reply_to_message_id=update.message_id,
         reply_markup=InlineKeyboardMarkup(
             [
