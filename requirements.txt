@@ -4,8 +4,6 @@ Pyrogram
 Pymongo
 Requests 
 TgCrypto
-Imdbpy
 python-telegram-bot==12.6.1
-ujson==2.0.3
-IMDbPY==6.8
+
 
